@@ -35,6 +35,10 @@ module.exports = {
       move_down: "Mover para baixo",
       open: "Abrir",
       toggle_theme: "Alternar tema",
+      select_columns: "Selecionar Colunas",
+      clear_array_input: "Limpar lista",
+      select_all_button: "Selecionar todos",
+      remove_all_filters: "Remover todos os filtros",
     },
     boolean: {
       true: "Sim",
@@ -52,6 +56,9 @@ module.exports = {
       show: "%{name} #%{id}",
       empty: "Ainda não há nenhum registro em %{name}",
       invite: "Gostaria de criar um novo?",
+      access_denied: "Acesso negado",
+      authentication_error: "Erro de autenticação",
+      placeholder_data_warning: "Problema de rede: falha na atualização de dados.",
     },
     input: {
       file: {
@@ -102,6 +109,7 @@ module.exports = {
       yes: "Sim",
       unsaved_changes:
         "Algumas das suas mudanças não foram salvas, deseja realmente ignorá-las?",
+      auth_error: "Erro na autorização",
     },
     navigation: {
       no_results: "Nenhum resultado encontrado",
@@ -121,6 +129,8 @@ module.exports = {
       prev: "Anterior",
       page_rows_per_page: "Linhas por página:",
       skip_nav: "Pular para o conteúdo",
+      clear_filters: "Limpar filtros",
+      no_filtered_results: "Nenhum resultado encontrado para o filtro",
     },
     sort: {
       sort_by: "Ordenar por %{field} %{order}",
@@ -152,6 +162,7 @@ module.exports = {
       canceled: "Ação cancelada.",
       logged_out: "Sua sessão foi encerrada. Por favor, reconecte.",
       not_authorized: "Você não tem autorização para acessar esse recurso.",
+      application_update_available: "Uma nova versão está disponível.",
     },
     validation: {
       required: "Obrigatório",
@@ -176,32 +187,30 @@ module.exports = {
         "Tem certeza que deseja remover esse item da sua lista de pesquisas salvas?",
       help: "Filtrar os resultados e salvar essa pesquisa para depois.",
     },
-    tiptap: {
-      clear_format: "Limpar Formatação",
-      bold: "Negrito",
-      italic: "Itálico",
-      underline: "Sublinhado",
-      strike: "Tachado",
-      code: "Código",
-      align_left: "Alinhar à Esquerda",
-      align_right: "Alinhar à Direita",
-      align_center: "Centralizar",
-      align_justify: "Justificar",
-      select_level: "Selecionar Estilo",
-      current_level: "Estilo Atual",
-      paragraph: "Normal",
-      heading1: "Título 1",
-      heading2: "Título 2",
-      heading3: "Título 3",
-      heading4: "Título 4",
-      heading5: "Título 5",
-      heading6: "Título 6",
-      link: "Adicionar Link",
-      list_bulleted: "Lista com Marcadores",
-      list_numbered: "Lista Numerada",
-      blockquote: "Citação",
-      color: "Cor",
-      highlight: "Cor de Realce",
+    configurable: {
+      customize: "Customizar",
+      configureMode: "Configurar esta página",
+      Datagrid: {
+        unlabeled: "Coluna sem rótulo #%{column}",
+        title: "#%{title}",
+      },
+      inspector: {
+        title: "Inspetor",
+        content: "Passe o mouse sobre os elementos da interface do usuário do aplicativo para configurá-los",
+        reset: "Redefinir configurações",
+        hideAll: "Esconder tudo",
+        showAll: "Exibir tudo",
+      },
+      SimpleList: {
+        primaryText: "Texto primário",
+        secondaryText: "Texto secundário",
+        tertiaryText: "Texto terciário",
+        title: "#%{title}",
+      },
+      SimpleForm: {
+        title: "#%{title}",
+        unlabeled: "Sem rótulo #%{column}",
+      },
     },
   },
 };
